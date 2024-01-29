@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #f2f2f2;
+  margin: 0 auto;
+  padding: 20px;
+  max-width: 400px;
+  margin-top: 40px;
+  border-radius: 15px;
+  border: 2px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.result {
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  border: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  border-radius: 15px;
+}
+
+.result:focus {
+  outline-color: #000000;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 20px;
+  grid-gap: 10px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  border-radius: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #ddd;
+}
+
+.clear,
+.delete {
+  background-color: #f72d2d;
+  color: #ffffff;
+  transition: background-color 0.2s ease-in-out;
+  -webkit-text-stroke: 2px #ffffff;
+}
+
+.clear:hover,
+.delete:hover {
+  background-color: #d72828;
+}
+
+.clear:active,
+.delete:active {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  font-size: 23px;
+}
+
+.operator {
+  background-color: #3b7efa;
+  color: #ffffff;
+  -webkit-text-stroke: 2px #ffffff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.operator:hover {
+  background-color: #2f64c7;
+}
+
+.operator:active {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5) inset;
+  font-size: 23px;
+}
+
+.number,
+.decimal {
+  background-color: #fff;
+  transition: background-color 0.2s ease-in-out;
+  -webkit-text-stroke: 1px #000000;
+}
+
+.number:active,
+.decimal:active {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  font-size: 23px;
+}
+
+.equals {
+  grid-column: span 3;
+  background-color: #01fe30;
+  color: #ffffff;
+  -webkit-text-stroke: 1px #ffffff;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.equals:hover {
+  background-color: #01d628;
+}
+
+.equals:active {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3) inset;
+  font-size: 23px;
+}
